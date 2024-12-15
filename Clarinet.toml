@@ -1,0 +1,29 @@
+[project]
+name = 'GrantDAO'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.ecosystem-integration]
+path = 'contracts/ecosystem-integration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.proposal]
+path = 'contracts/proposal.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.voting-token]
+path = 'contracts/voting-token.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
